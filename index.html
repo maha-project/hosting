@@ -1,8 +1,69 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Provisional Food</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
 <body>
-<title>Hosting page</title>
-<h1>Welcome to website</h1>
-<p>This is a sample page of hosting</p>
+
+  <header>
+    <div class="logo">🍽 Provisional Food</div>
+    <nav>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#menu">Menu</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section id="home">
+    <h1>Welcome to Provisional Food</h1>
+    <p>Delicious food made with love and delivered fresh to your door.</p>
+    <button onclick="alert('Ordering coming soon!')">Order Now</button>
+  </section>
+
+  <section id="menu">
+    <h2>Our Menu</h2>
+    <div class="menu-items">
+      <div class="item">
+        <h3>🍕 Pizza</h3>
+        <p>Cheesy and tasty with fresh ingredients.</p>
+      </div>
+      <div class="item">
+        <h3>🍔 Burger</h3>
+        <p>Grilled to perfection with crispy fries.</p>
+      </div>
+      <div class="item">
+        <h3>🥗 Salad</h3>
+        <p>Healthy and refreshing mixed greens.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="about">
+    <h2>About Us</h2>
+    <p>We are passionate food lovers delivering happiness through taste. We believe in quality, freshness, and love in every bite.</p>
+  </section>
+
+  <section id="contact">
+    <h2>Contact Us</h2>
+    <form onsubmit="handleForm(event)">
+      <input type="text" placeholder="Your Name" required />
+      <input type="email" placeholder="Your Email" required />
+      <textarea placeholder="Your Message" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>© 2025 Provisional Food. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
+
